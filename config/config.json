@@ -1,0 +1,16 @@
+{
+  "localhost": {
+    "dialect": "postgres",
+    "protocol": "postgres"
+  },
+  "awsrds": {
+    "dialect": "postgres",
+    "protocol": "postgres",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}

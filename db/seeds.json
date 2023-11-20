@@ -1,0 +1,14 @@
+{
+  "Users": [
+    {
+      "public_id": "7909ef5d-6c71-4f63-b5c1-3ed7ee875076",
+      "email": "plaird83@gmail.com",
+      "email_verified": false,
+      "first_name": "Paul",
+      "last_name": "Laird",
+      "email_opt_in": true,
+      "password": "test",
+      "avatar": ""
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "Success": { "code": "200", "name": "Success", "message": "OK" },
+  "BadRequest": {
+    "code": "400",
+    "name": "Bad Request",
+    "message": "This request requires parameters that were not provided."
+  },
+  "Unauthorized": {
+    "code": "401",
+    "name": "Unauthorized",
+    "message": "This request requires authentication and none was provided."
+  },
+  "Forbidden": {
+    "code": "403",
+    "name": "Forbidden",
+    "message": "The authentication credentials do not have access to this resource."
+  },
+  "NotFound": {
+    "code": "404",
+    "name": "Not Found",
+    "message": "The server was unable to find a resource matching this request."
+  },
+  "MethodNotAllowed": {
+    "code": "405",
+    "name": "Method Not Allowed",
+    "message": "The server has not implemented the requested HTTP method."
+  },
+  "TooManyRequests": {
+    "code": "429",
+    "name": "Too Many Requests",
+    "message": "The client has sent too many requests within the given time."
+  },
+  "InternalServerError": {
+    "code": "500",
+    "name": "Internal Server Error",
+    "message": "The server has encountered a situation it does not know how to handle."
+  }
+}
