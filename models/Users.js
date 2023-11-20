@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class User extends Model {}
+class User extends Model { }
 
 User.init(
   {
@@ -25,6 +25,14 @@ User.init(
         isEmail: true,
       },
     },
+    phone: {
+      type: DataTypes.STRING,
+      validate: {
+        notNull: true,
+        len: [10, 10],
+        isInt: true,
+      }
+    },
     email_verified: {
       type: DataTypes.BOOLEAN,
       allowNull: false,
@@ -45,8 +53,8 @@ User.init(
     },
     password: {
       type: DataTypes.STRING(64),
-      allowNull: false
-      //is: ["/^[0-9a-f]{64}$/i"], // Validation for hashed password
+      allowNull: false,
+      is: ["/^[0-9a-f]{64}$/i"], // Validation for hashed password
     },
     avatar: {
       type: DataTypes.STRING,

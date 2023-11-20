@@ -11,7 +11,7 @@ const users = {
       const users = await User.findAll({
         attributes: ["public_id", "first_name", "last_name"],
       });
-      response = { ...users };
+      response = users;
 
       res.status(http.Success.code).json(response);
     } catch (err) {
